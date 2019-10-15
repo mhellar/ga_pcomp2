@@ -31,6 +31,7 @@ parser.on("data", function (data) {
 
 //Process incoming messages
 io.on('connection', function (socket) {
+
     socket.on('data', function (msg) {
         console.log(msg.val);
         if (msg.val === 'red') {
@@ -43,6 +44,7 @@ io.on('connection', function (socket) {
             portWrite('B')
         }
     });
+
 });
 
 //Pass messages to serial port
