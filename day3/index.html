@@ -170,6 +170,76 @@
             <a href="#" class="navigate-down">
             </a>
         </section>
+        <section>
+            <p>The ESP32</p>
+            <img src="img/esp32.jpg" height="400">
+        </section>
+        <section>
+            <p>ESP32 Pinout</p>
+            <img src="img/esp32pinout.jpg" height="400">
+        </section>
+        <section>
+            <p>Install This Driver</p>
+            <a href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers">Here</a>
+        </section>
+        <section>
+            <p>Open the Arduino IDE</p><br>
+            <a href="https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md">
+            Lets install the ESP32 core for Arduino here. 
+            </a>
+        </section>
+        <section>
+            <h3>Testing the board:</h3>
+            <li>Open the Arduino IDE</li>
+            <li>Under the tools menu set the board to ESP32 and the port to cu.SLAB_USBtoUART</li>
+            <img src="img/tools.png" height="400">
+        </section>
+        <section>
+            <h3>Testing the board:</h3>
+            <li>Open the Blink program from the code folder</li>
+            <li>Upload the program by hitting the arrow in the upper left corner</li>
+            <img src="img/blink.png" height="400">
+        </section>
+        
+        <section>
+            <h3>Testing the wifi:</h3>
+            <li>Open the SimpleWiFiServer program form the code folder</li>
+            <li>Change lines 30 and 31 to "Gray Area Incubator" and "grandstand</li>
+            <li>Upload the program by hitting the arrow in the upper left corner</li>
+        </section>
+        <section>
+            <h3>Testing the wifi:</h3>
+            <li>Once uploaded open the serial monitor in the Arduino IDE(Magnifying glass icon upper right)</li>
+            <li>set the BAUD rate to 115200</li>
+            <li>Hit the black reset button on the ESP32, the serial monitor will show the ESP32's IP address</li>
+            <li>Enter this IP address in your Web Browser</li>
+            <img src="img/serial1.png" height="200">
+        </section>
+        <section>
+            OSC on the ESP32<br>
+            From the arduino library manager install the OSC library<br>
+        </section>
+        <section>
+            <ul>
+                <li>Open ESP32OSCLed, set the wifi credentials</li>
+                <li>Upload and then open the serial monitor with 115200 baud</li>
+                <li>Get the IP of the ESP32 and set it in touchOSC with port 8080</li>
+                <li>Hit the toggle button</li>
+            </ul>
+        </section>
+                        <section>
+                            <img src="img/esp32neo.png">
+                        </section>
+
+                <section>
+                    <ul>
+                        <li>Open ESP32OSCNeopixel, set the wifi credentials</li>
+                        <li>Upload and then open the serial monitor with 115200 baud</li>
+                        <li>Get the IP of the ESP32 and set it in touchOSC with port 8080</li>
+                        <li>Hit the toggle button</li>
+                    </ul>
+                </section>
+
         </div>
     </div>
     <script src="lib/js/head.min.js"></script>
